@@ -47,8 +47,8 @@ MedicareDataSource.prototype.parse_ = function(csv) {
     var position = new google.maps.LatLng(row.Y, row.X);
 
     var store = new storeLocator.Store(row.uuid, position, features, {
-      title: row.Name,
-      address: Name
+      title: row.name,
+      address: row.name
     });
     stores.push(store);
   }
