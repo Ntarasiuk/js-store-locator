@@ -9,10 +9,7 @@
     <script
       src="https://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js">
     </script>
-    <script src="../dist/store-locator.min.js"></script>
-    <script src="medicare-static-ds.js"></script>
-    <script src="panel.js"></script>
-    <link rel="stylesheet" href="../css/storelocator.css">
+    <script src="maplace.js"></script>
     <style>
       body { font-family: sans-serif; }
       #map-canvas, #panel { height: 500px; }
@@ -23,8 +20,15 @@
   </head>
   <body>
     <h1>Medicare offices</h1>
-    <div id="panel"></div>
-    <div id="map-canvas"></div>
+    <div id="panel"><div id="controls"></div></div>
+    <div id="gmap-menu"></div>
+
 
   </body>
+  <script>new Maplace({
+    locations: LocsAB,
+    map_div: '#gmap-menu',
+    controls_type: 'list',
+    controls_on_map: false
+}).Load();</script>
 </html>
