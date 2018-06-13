@@ -51,7 +51,7 @@ MedicareDataSource.prototype.parse_ = function(csv) {
       address: row.name
     });
     stores.push(store);
-  }
+  } 
   return stores;
 };
 
