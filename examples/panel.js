@@ -11,7 +11,7 @@ google.maps.event.addDomListener(window, 'load', function() {
 
   var view = new storeLocator.View(map, data, {
     geolocation: false,
-    features: data.getFeatures()
+    // features: data.getFeatures()
   });
 
   new storeLocator.Panel(panelDiv, {
