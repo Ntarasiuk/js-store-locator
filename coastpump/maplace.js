@@ -78,15 +78,17 @@
             var self = this,
                 index = hash || (i + 1),
                 title = ttl || this.o.locations[i].title,
-                el_a = $('<a data-load="' + index + '" id="ullist_a_' + index + '" href="#' + index + '" title="' + title + '"><span>' + (title || ('#' + (i + 1))) + '</span></a>');
+                desc = ttl || '<p><b>' + title +'</b></p>'+ this.o.locations[i].desc,
+                el_a = $('<a class="map-list" data-load="' + index + '" id="ullist_a_' + index + '" href="#' + index + '"><span>' + (desc || ('#' + (i + 1))) + '</span></a>');
 
-            el_a.css(this.o.controls_applycss ? {
+            el_a.css( {
                 color: '#666',
+                'border-bottom': '1px solid #eee',
                 display: 'block',
-                padding: '5px',
+                padding: '10px',
                 fontSize: this.o.controls_on_map ? '12px' : 'inherit',
                 textDecoration: 'none'
-            } : {});
+            });
 
             el_a.on('click', function(e) {
                 e.preventDefault();
