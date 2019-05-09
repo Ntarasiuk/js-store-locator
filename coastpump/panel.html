@@ -78,7 +78,7 @@ $(function() {
       return Object.assign(prev, { [prop]: values[i] });
     }, {});
   };
-var locations = axios.get('https://sheets.googleapis.com/v4/spreadsheets/1nkeHyPwmRaZ2b1dumhoC0p8YvnJaQs4mFdgJvEBK_O8/values/a1:k99?key=AIzaSyD0IKjRiS4iXpQzd0BpFEVzVDv7_4jVckI').then(({data: {values}})=>{
+var locations = axios.get('https://sheets.googleapis.com/v4/spreadsheets/1nkeHyPwmRaZ2b1dumhoC0p8YvnJaQs4mFdgJvEBK_O8/values/a1:l99?key=AIzaSyD0IKjRiS4iXpQzd0BpFEVzVDv7_4jVckI').then(({data: {values}})=>{
         var data = values.map(e => {
                 return {
                   [values[0][0]]: e[0],
@@ -91,7 +91,8 @@ var locations = axios.get('https://sheets.googleapis.com/v4/spreadsheets/1nkeHyP
                   [values[0][7]]: e[7],
                   [values[0][8]]: e[8],
                   [values[0][9]]: e[9],
-                  [values[0][10]]: e[10]
+                  [values[0][10]]: e[10],
+                  [values[0][11]]: e[11],
                 };
               });
               data.shift();
