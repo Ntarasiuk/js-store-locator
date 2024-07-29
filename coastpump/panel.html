@@ -31,6 +31,24 @@
       #controls { width: 300px; float: left; margin-right: 10px; overflow: auto; }
       #controls .feature-filter label { width: 130px; }
       p.attribution, p.attribution a { color: #666; }
+      @media (max-width: 767px) {
+        #controls{
+          float: none;
+          width:100%
+          height:150px;
+        }
+      .ullist{
+        display:flex;
+      }
+        .ullist li {
+        flex-basis: 200px;
+        display: flex;
+        font-size: 12px;
+        height: 150px;
+        flex-shrink: 0;
+        }
+          }
+
     </style>
   </head>
   <body>
