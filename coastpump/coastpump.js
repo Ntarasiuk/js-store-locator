@@ -33,11 +33,11 @@ var coastpumplocs = [
     "lon": -81.9517981,
     "lat": 26.6619495,
     "title": "Cape Coral, FL",
-    "street": "1110 NE Pine Island Rd #17, Cape Coral, FL, 33909",
+    "street": "382 Pondella Rd, North Fort Myers, FL 33903",
     "desc": "Phone: (239)-772-1151<br>Fax: (239)-772-1161<br>Mgr: Tom Trendafilov<br>Regional Mgr: Ron Reagan",
     "icon": "https://www.shareicon.net/download/32x32/2016/08/18/811941_miscellaneous_512x512.png",
     "zoom": 8,
-    "html": "<b>Cape Coral, FL</b></br>1110 NE Pine Island Rd #17, Cape Coral, FL, 33909</br>Phone: (239)-772-1151<br>Fax: (239)-772-1161<br>Mgr: Tom Trendafilov<br>Regional Mgr: Ron Reagan"
+    "html": "<b>Cape Coral, FL</b></br>382 Pondella Rd, North Fort Myers, FL 33903</br>Phone: (239)-772-1151<br>Fax: (239)-772-1161<br>Mgr: Tom Trendafilov<br>Regional Mgr: Ron Reagan"
   },
   {
     "lon": -80.3769564,
